@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jun Liu 's Servlet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+       <form id="eventForm" method ="post" action = "MyServlet">
+
+            <div class="formcolumn">
+
+                <label for="ename">Event Name:</label>
+                <input type="text" name="name" value="" size="20" />
+
+                <label for="eloc">Event Location:</label>
+                <input type="text" name="loc" value="" size="20" />
+
+                <label for="edate">Date:</label>
+                <input type="date" name="date" />
+
+            </div>
+
+            <div class="formcolumn">
+
+                <fieldset>
+                    <legend>Event Type:</legend>
+                    <ul>
+                        <li><input type="radio" name="type" value="academic"/>Academic</li>
+                        <li><input type="radio" name="type" value="sport"/>Sport</li>
+                        <li><input type="radio" name="type" value="art"/>Art</li>
+                    </ul>
+                </fieldset> 
+
+                <label for="info">More Info:</label>
+                <textarea name="info" rows="8" cols="50">
+                    
+                </textarea>
+
+            </div>  
+
+            <div class="buttons">
+                <input class="button" type="submit" value="Publish"/>
+            </div>
+        </form>
+    </body>
+</html>
